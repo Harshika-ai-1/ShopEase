@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Shop<span>Ease</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <div class="search-box">
+                🔍
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            </div>
+
+            <button class="icon-btn wishlist">
+                ♡
+            </button>
+
+            <button class="icon-btn cart-btn">
+                🛒
+                <span class="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                Welcome to ShopEase
+            </p>
+
+            <h1>
+                Shop Smart.<br>
+                Shop Easy.
+            </h1>
+
+            <p class="hero-description">
+                Discover amazing products at great prices.
+                Fashion, electronics, beauty and more —
+                all in one place.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="primary-btn">
+                    Shop Now
+                </a>
+
+                <a href="#categories" class="secondary-btn">
+                    Explore Categories
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-circle">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=80"
+                    alt="Shopping"
+                >
+
+            </div>
+
+            <div class="floating-card card-one">
+                🛍️ <strong>Easy Shopping</strong>
+            </div>
+
+            <div class="floating-card card-two">
+                ⭐ <strong>Best Products</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <p>Explore</p>
+
+            <h2>Shop By Category</h2>
+
+        </div>
+
+
+        <div class="category-container">
+
+            <div class="category-card" data-category="Fashion">
+                <div class="category-icon">👗</div>
+                <h3>Fashion</h3>
+                <p>Latest styles</p>
+            </div>
+
+
+            <div class="category-card" data-category="Electronics">
+                <div class="category-icon">💻</div>
+                <h3>Electronics</h3>
+                <p>Smart gadgets</p>
+            </div>
+
+
+            <div class="category-card" data-category="Beauty">
+                <div class="category-icon">💄</div>
+                <h3>Beauty</h3>
+                <p>Beauty essentials</p>
+            </div>
+
+
+            <div class="category-card" data-category="Footwear">
+                <div class="category-icon">👟</div>
+                <h3>Footwear</h3>
+                <p>Step in style</p>
+            </div>
+
+
+            <div class="category-card" data-category="Home">
+                <div class="category-icon">🏠</div>
+                <h3>Home</h3>
+                <p>Home essentials</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products" id="products">
+
+        <div class="section-heading">
+
+            <p>Our Collection</p>
+
+            <h2>Popular Products</h2>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <!-- Headphones -->
+
+            <div
+                class="product-card"
+                data-product="headphones"
+            >
+
+                <div class="product-image">
+
+                    <span class="discount">
+                        -21%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                        alt="Wireless Headphones"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Electronics
+                    </p>
+
+                    <h3>
+                        Wireless Headphones
+                    </h3>
+
+                    <div class="rating">
+                        ⭐ 4.5
+                    </div>
+
+                    <div class="price">
+                        ₹1,499
+                        <del>₹1,899</del>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Shoes -->
+
+            <div
+                class="product-card"
+                data-product="shoes"
+            >
+
+                <div class="product-image">
+
+                    <span class="discount">
+                        -15%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                        alt="Running Shoes"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Footwear
+                    </p>
+
+                    <h3>
+                        Running Shoes
+                    </h3>
+
+                    <div class="rating">
+                        ⭐ 4.6
+                    </div>
+
+                    <div class="price">
+                        ₹2,199
+                        <del>₹2,599</del>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Handbag -->
+
+            <div
+                class="product-card"
+                data-product="handbag"
+            >
+
+                <div class="product-image">
+
+                    <span class="discount">
+                        -24%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"
+                        alt="Classic Handbag"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Fashion
+                    </p>
+
+                    <h3>
+                        Classic Handbag
+                    </h3>
+
+                    <div class="rating">
+                        ⭐ 4.4
+                    </div>
+
+                    <div class="price">
+                        ₹1,299
+                        <del>₹1,699</del>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Smart Watch -->
+
+            <div
+                class="product-card"
+                data-product="watch"
+            >
+
+                <div class="product-image">
+
+                    <span class="discount">
+                        -29%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                        alt="Smart Watch"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Electronics
+                    </p>
+
+                    <h3>
+                        Smart Watch
+                    </h3>
+
+                    <div class="rating">
+                        ⭐ 4.7
+                    </div>
+
+                    <div class="price">
+                        ₹2,499
+                        <del>₹3,499</del>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section" id="cart">
+
+        <div class="section-heading">
+
+            <p>Your Shopping Bag</p>
+
+            <h2>Shopping Cart</h2>
+
+        </div>
+
+
+        <div class="cart-container">
+
+            <div id="cart-items">
+
+                <div class="empty-cart">
+
+                    <h3>
+                        Your cart is empty 🛒
+                    </h3>
+
+                    <p>
+                        Add some products to your cart.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="cart-summary">
+
+                <h3>
+                    Order Summary
+                </h3>
+
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <span id="cart-subtotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Delivery</span>
+
+                    <span id="cart-delivery">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row total-row">
+
+                    <span>Total</span>
+
+                    <span id="cart-total">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <button class="checkout-btn">
+                    Proceed to Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFER ================= -->
+
+    <section class="offer">
+
+        <div>
+
+            <p>Special Offer</p>
+
+            <h2>
+                Get Free Delivery
+            </h2>
+
+            <p>
+                On orders above ₹999
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-heading">
+
+            <p>About Us</p>
+
+            <h2>
+                Why Choose ShopEase?
+            </h2>
+
+        </div>
+
+
+        <div class="about-container">
+
+            <div>
+                🛍️
+                <h3>Easy Shopping</h3>
+                <p>
+                    Simple and user-friendly shopping
+                    experience.
+                </p>
+            </div>
+
+
+            <div>
+                🚚
+                <h3>Fast Delivery</h3>
+                <p>
+                    Get your products delivered quickly
+                    and safely.
+                </p>
+            </div>
+
+
+            <div>
+                🔒
+                <h3>Secure Shopping</h3>
+                <p>
+                    Your shopping experience is safe
+                    and secure.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-logo">
+            Shop<span>Ease</span>
+        </div>
+
+        <p>
+            Your simple and smart online shopping destination.
+        </p>
+
+        <p>
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= PRODUCT MODAL ================= -->
+
+    <div
+        class="product-modal"
+        id="productModal"
+    >
+
+        <div class="product-modal-content">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-product-image">
+
+                <img
+                    id="modalProductImage"
+                    src=""
+                    alt="Product"
+                >
+
+            </div>
+
+
+            <div class="modal-product-info">
+
+                <p
+                    class="modal-category"
+                    id="modalCategory"
+                ></p>
+
+                <h2
+                    id="modalProductName"
+                ></h2>
+
+                <div
+                    class="modal-rating"
+                    id="modalRating"
+                ></div>
+
+                <p
+                    class="modal-description"
+                    id="modalDescription"
+                ></p>
+
+
+                <div class="modal-price">
+
+                    <strong
+                        id="modalPrice"
+                    ></strong>
+
+                    <del
+                        id="modalOldPrice"
+                    ></del>
+
+                </div>
+
+
+                <div class="modal-quantity">
+
+                    <span>Quantity</span>
+
+                    <div class="quantity-control">
+
+                        <button id="modalMinus">
+                            −
+                        </button>
+
+                        <span id="modalQuantity">
+                            1
+                        </span>
+
+                        <button id="modalPlus">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="modal-add-cart"
+                    id="modalAddCart"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
